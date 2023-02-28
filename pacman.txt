@@ -1,0 +1,38 @@
+PACMAN COMMANDS
+
+update packages & upgrade
+# pacman -Syu
+
+update packages
+# pacman -Syy
+
+To remove a single package, leaving all of its dependencies installed: 
+# pacman -R package_name
+
+To remove a package and its dependencies which are not required by any other installed package: 
+# pacman -Rs package_name
+
+The above may sometimes refuse to run when removing a group which contains otherwise needed packages. In this case try:
+
+# pacman -Rsu package_name
+
+
+DATE TIME
+timedatectl status
+systemctl enable --now systemd-timesyncd.service
+timedatectl set-ntp true
+
+For touch pad enable
+
+/usr/share/X11/xorg.conf.d/40-libinput.conf
+
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+        Option "Tapping" "On"
+EndSection
+
+
+
