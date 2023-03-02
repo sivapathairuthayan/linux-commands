@@ -35,4 +35,5 @@ Section "InputClass"
 EndSection
 
 
+/* end of file */
 
