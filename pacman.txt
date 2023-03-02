@@ -23,7 +23,6 @@ systemctl enable --now systemd-timesyncd.service
 timedatectl set-ntp true
 
 For touch pad enable
-
 /usr/share/X11/xorg.conf.d/40-libinput.conf
 
 Section "InputClass"
@@ -33,7 +32,3 @@ Section "InputClass"
         Driver "libinput"
         Option "Tapping" "On"
 EndSection
-
-
-/* end of file */
-
