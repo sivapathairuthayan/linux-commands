@@ -1,3 +1,16 @@
+Add SSH key to avoid typing pass phrase.
+----------------------------------------
+Start SSH Agent
+
+eval $(ssh-agent)
+
+To add and save your key permanently on Ubuntu (or equivalent):
+---------------------------------------------------------------
+ssh-add ~/.ssh/id_rsa
+
+
+Git Initialize
+---------------
 git init
 git remote add origin <git@github.com:email@example.com/repo-name.git>
 git fetch origin <branch-name>
