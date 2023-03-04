@@ -1,12 +1,22 @@
-Add SSH key to avoid typing pass phrase.
-----------------------------------------
-Start SSH Agent
 
-eval $(ssh-agent)
+Start SSH Agent
+===============
+
+# eval $(ssh-agent)
+
+
+Add SSH key to avoid typing pass phrase
+=======================================
+
+To add your private key to it:
+This will ask you your passphrase just once, and then you should be allowed to push, provided that you uploaded the public key to Github.
+
+# ssh-add
+
 
 To add and save your key permanently on Ubuntu (or equivalent):
 ---------------------------------------------------------------
-ssh-add ~/.ssh/id_rsa
+# ssh-add ~/.ssh/id_rsa
 
 
 Git Initialize
